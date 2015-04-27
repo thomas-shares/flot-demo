@@ -1,36 +1,30 @@
 # flot
 
-FIXME: description
+Sample of how to use Clojure, ClojureScript, jQuery, Flot and Chors
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Clone this repo.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar flot-0.1.0-standalone.jar [args]
+Run "lein cljsbuild once" and "lein run" and point your browser at localhost:8080
 
 ## Options
 
-FIXME: listing of options this app accepts.
+No option
 
 ## Examples
 
-...
+This is an example ;)
 
 ### Bugs
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Please report them!
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2015 Thomas van der Veen
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
