@@ -1,6 +1,6 @@
 # flot
 
-Sample of how to use Clojure, ClojureScript, jQuery, Flot and Chors
+Sample of how to use Clojure, ClojureScript, jQuery, http-kit, Flot and Chord.
 
 ## Installation
 
@@ -8,11 +8,11 @@ Clone this repo.
 
 ## Usage
 
-Run "lein cljsbuild once" and "lein run" and point your browser at localhost:8080
+Run "lein cljsbuild once" and "lein run" and point your browser at localhost:8080 (this can take a little while).
 
 ## Options
 
-No option
+No options.
 
 ## Examples
 

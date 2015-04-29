@@ -27,16 +27,16 @@
 (defn ws-handler [{:keys [ws-channel] :as req}]
   (println "Opened connection from" (:remote-addr req))
   (go-loop [previous 50]
-      (let [new1 (+ previous (- (* (rand) 10) 5) )
-            new2 (if (neg? new1)
+      (let [rnd (+ previous (- (* (rand) 10) 5) )
+            pos (if (neg? rnd)
                    0
-                   new1)
-            new3 (if (> new2 100)
+                   rnd)
+            new-value (if (> pos 100)
                    100
-                   new2)]
-        (>! ws-channel new3 )
+                   pos)]
+        (>! ws-channel new-value )
         (<! (timeout 40))
-        (recur new3))))
+        (recur new-value))))
 
 (comp/defroutes all-routes
     (comp/GET "/" [] (response (page-frame)))
